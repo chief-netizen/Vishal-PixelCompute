@@ -1,1 +1,53 @@
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4x4 Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="grid" id="grid">
+        <div class="box" id="1"></div>
+        <div class="box" id="2"></div>
+        <div class="box" id="3"></div>
+        <div class="box" id="4"></div>
+        <div class="box" id="5"></div>
+        <div class="box" id="6"></div>
+        <div class="box" id="7"></div>
+        <div class="box" id="8"></div>
+        <div class="box" id="9"></div>
+        <div class="box" id="10"></div>
+        <div class="box" id="11"></div>
+        <div class="box" id="12"></div>
+        <div class="box" id="13"></div>
+        <div class="box" id="14"></div>
+        <div class="box" id="15"></div>
+        <div class="box" id="16"></div>
+        
+    </div>
+
+    <button id="reset">Reset</button>
+
+<!-- Win Card -->
+<template id="win-template">
+    <div class="card" id="win-card">
+        <h2>You Won!</h2>
+        <p>Congratulations! You found the correct combination.</p>
+    </div>
+</template>
+
+<!-- Lose Card -->
+<template id="lose-template">
+    <div class="card" id="lose-card">
+        <h2>Game Over!</h2>
+        <p>Better luck next time. Give it another try!</p>        
+    </div>
+</template>
+
+     <script src="app.js"></script>
+</body>
+</html>
