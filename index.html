@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,15 +32,15 @@
             font-size: 2.5rem;
         }
 
-        header p, .card p {
+        header p,
+        .card p {
             color: #8b949e;
             line-height: 1.6;
         }
 
         .projects {
             display: grid;
-            grid-template-columns:
-                repeat(auto-fit, minmax(220px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 20px;
         }
 
@@ -48,11 +49,16 @@
             background: #161b22;
             border: 1px solid #30363d;
             border-radius: 12px;
-            transition: transform 0.2s;
+            transition: transform 0.2s, border-color 0.2s;
         }
 
         .card:hover {
             transform: translateY(-5px);
+            border-color: #58a6ff;
+        }
+
+        .card h2 {
+            margin-top: 0;
         }
 
         .card a {
@@ -70,6 +76,10 @@
             body {
                 padding: 20px;
             }
+
+            h1 {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
@@ -78,18 +88,31 @@
     <header>
         <h1>My Projects.</h1>
         <p>
-            Projects built with
-            HTML, CSS and JavaScript.
+            A collection of projects built with HTML, CSS and JavaScript.
         </p>
     </header>
 
     <main class="projects">
         <article class="card">
             <h2>Sticky Notes</h2>
-            <p>Create and delete notes on a board.</p>
-            <a href="./StickyNotes/index.html">Open project →</a>
-            <h2>BattleShip</h2>
-            <a href="./battleship/index.html">Open project →</a>
+            <p>
+                A simple sticky notes application where you can
+                create and delete notes on a board.
+            </p>
+            <a href="./StickyNotes/index.html">
+                Open project →
+            </a>
+        </article>
+
+        <article class="card">
+            <h2>Battleship</h2>
+            <p>
+                A Battleship game project built to practice
+                JavaScript logic and DOM manipulation.
+            </p>
+            <a href="./battleship/index.html">
+                Open project →
+            </a>
         </article>
     </main>
 </body>
