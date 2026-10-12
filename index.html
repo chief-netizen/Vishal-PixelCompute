@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 40px;
+            background: #0d1117;
+            color: #e6edf3;
+            font-family: Arial, sans-serif;
+        }
+
+        header, main {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        header {
+            margin-bottom: 35px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        header p, .card p {
+            color: #8b949e;
+            line-height: 1.6;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            padding: 24px;
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 500px) {
+            body {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Projects.</h1>
+        <p>
+            Projects built with
+            HTML, CSS and JavaScript.
+        </p>
+    </header>
+
+    <main class="projects">
+        <article class="card">
+            <h2>Sticky Notes</h2>
+            <p>Create and delete notes on a board.</p>
+            <a href="./StickyNotes/index.html">Open project →</a>
+        </article>
+    </main>
+</body>
+</html>
