@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Notes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="Heading">
+        <p><b>STICKY NOTES</b></p>
+    </div>
+
+    <div id="White-Board">
+        <div class="Input-Box-Container">
+            <input id="Input-Box" type="text"
+                   placeholder="Enter the note here">
+            <button id="add-note">Add Note</button>
+        </div>
+
+        <div id="Notes-Container"></div>
+    </div>
+
+    <template id="card-template">
+        <div class="card">
+            <div class="tools">
+                <button class="red box" aria-label="Delete note"></button>
+            </div>
+
+            <div class="card__content"></div>
+        </div>
+    </template>
+
+    <script src="stickyNote.js"></script>
+</body>
+</html>
