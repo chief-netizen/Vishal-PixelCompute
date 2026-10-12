@@ -1,0 +1,89 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: monospace;
+    background-color: #f4f4f4;
+}
+
+#Heading {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.Input-Box-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+#Input-Box {
+    width: 250px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    background-color: #fff;
+    border: 4px solid #000;
+    border-radius: 0;
+    outline: none;
+}
+
+#add-note {
+    padding: 15px;
+    font-family: monospace;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+#Notes-Container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    width: 190px;
+    min-height: 180px;
+    background-color: #e0dfd6;
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px #bbb;
+    overflow-wrap: anywhere;
+}
+
+.tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+}
+
+.box {
+    width: 14px;
+    height: 14px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.red {
+    background-color: #ff605c;
+}
+
+.card__content {
+    padding: 10px;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    min-height: 130px;
+}
