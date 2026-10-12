@@ -1,0 +1,94 @@
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(4, 80px);
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: steelblue;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: darkblue;
+}
+
+button {
+    padding: 10px 24px;
+    border: none;
+    border-radius: 6px;
+    background-color: crimson;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.card {
+    width: 300px;
+    padding: 24px;
+    margin: 20px auto;
+    border-radius: 12px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#win-card {
+    background-color: #dcfce7;
+    border: 2px solid #22c55e;
+    color: #166534;
+}
+
+#lose-card {
+    background-color: #fee2e2;
+    border: 2px solid #ef4444;
+    color: #991b1b;
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 28px;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.play-again {
+    padding: 10px 20px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #333;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.play-again:hover {
+    opacity: 0.8;
+}
+
