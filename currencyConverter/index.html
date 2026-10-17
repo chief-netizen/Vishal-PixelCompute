@@ -1,1 +1,60 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Connect JavaScript -->
+</head>
+<body>
+
+    <main class="converter">
+        <h1>Currency Converter</h1>
+        <label for="amount">Enter amount</label>
+        <input
+            type="number"
+            id="amount"
+            placeholder="100"
+            min="0"
+            value="100"
+        >
+
+        <div class="currency-row">
+            <select id="from-currency" aria-label="Convert from">
+                <!-- <option value="USD" selected>🇺🇸 USD - United States Dollar</option>
+                <option value="INR">🇮🇳 INR - Indian Rupee</option>
+                <option value="EUR">🇪🇺 EUR - Euro</option>
+                <option value="GBP">🇬🇧 GBP - British Pound</option>
+                <option value="JPY">🇯🇵 JPY - Japanese Yen</option> -->
+            </select>
+
+            <span class="to-text">TO</span>
+
+            <select id="to-currency" aria-label="Convert to">
+                <!-- <option value="USD">🇺🇸 USD - United States Dollar</option>
+                <option value="INR">🇮🇳 INR - Indian Rupee</option>
+                <option value="EUR" selected>🇪🇺 EUR - Euro</option>
+                <option value="GBP">🇬🇧 GBP - British Pound</option>
+                <option value="JPY">🇯🇵 JPY - Japanese Yen</option> -->
+            </select>
+        </div>
+
+        <button id="convert-btn" type="button">Convert</button>
+
+        <p id="result" aria-live="polite"></p>
+        
+    </main>
+    <script src="./app.js" defer type="module"></script>
+</body>
+</html>
+
